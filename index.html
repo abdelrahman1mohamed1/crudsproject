@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>cruds by abdo</h1>
+            
+        </div>
+        <div class="inpt">
+            <input id="name" type="text" placeholder="product name" required>
+            <div class="price">  
+                <input id="price" type="number" placeholder="product price" onkeyup="getTotal()">
+                <input id="discount" type="number" placeholder="product discount" required onkeyup="getTotal()">
+                <small class="total" id="total"></small></div>
+  
+            <input id="count" type="number" placeholder="count" max="99" required>
+        </div>
+        <div class="outpt">
+            <button id="createbtn">create</button>
+            <input id="search" type="text" placeholder="search" onkeyup="searchdata(value)" >
+            <div class="searchbtns"><button id="searchbynm" onclick="searcho()">search</button></div>
+            <div id="deleteALL"></div>
+
+
+           
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
