@@ -17,7 +17,7 @@ function getTotal() {
         let result = price.value - (price.value * discount.value / 100);
         total.innerHTML = result;
         document.getElementById('total').style.background = 'green';
-    }else {
+    }else if(price.value = '') {
         total.innerHTML = '';
         document.getElementById('total').style.background = 'red';
 
